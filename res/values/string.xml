@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="header_hint">下拉刷新</string>
+    <string name="header_last_refresh_time">上次刷新时间：</string>
+    <string name="header_refreshing">正在刷新</string>
+    <string name="header_ready">松开刷新</string>
+    
+</resources>
