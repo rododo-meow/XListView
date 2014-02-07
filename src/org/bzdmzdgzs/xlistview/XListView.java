@@ -3,7 +3,6 @@ package org.bzdmzdgzs.xlistview;
 import android.content.Context;
 import android.os.Handler;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.ListView;
 import android.widget.Scroller;
@@ -117,13 +116,12 @@ public class XListView extends ListView {
 			}
 			break;
 		}
-		return true;
+		return super.onTouchEvent(event);
 	}
 
 	@Override
 	public void computeScroll() {
 		if (scroller.computeScrollOffset()) {
-			Log.i("scroll", Integer.toString(scroller.getCurrY()));
 			if (scroller.getCurrY() > 0)
 				headerView.setVisibleHeight(scroller.getCurrY());
 			postInvalidate();

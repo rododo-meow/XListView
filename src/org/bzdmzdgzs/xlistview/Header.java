@@ -46,6 +46,7 @@ class Header extends LinearLayout {
 		animRollDown.setDuration(ROTATE_DURATION);
 		animRollDown.setFillAfter(true);
 		
+		state = STATE_NORMAL + 1;
 		setNormal();
 		setRefreshTime("");
 	}
